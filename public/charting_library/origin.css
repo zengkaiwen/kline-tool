@@ -1,0 +1,187 @@
+:root:not(.theme-dark) {
+  --tv-color-platform-background: rgba(255, 255, 255, 0);
+  --tv-color-pane-background: rgba(255, 255, 255, 0);
+  --tv-color-pane-background-secondary: rgba(255, 255, 255, 0);
+  --tv-color-toolbar-button-background-hover: rgba(0, 186, 61, 0.03);
+  --tv-color-toolbar-button-background-secondary-hover: rgba(0, 186, 61, 0.03);
+  --tv-color-toolbar-button-background-expanded: rgba(0, 186, 61, 0.03);
+  --tv-color-toolbar-button-text: #646464;
+  --tv-color-toolbar-button-text-hover: #646464;
+  --tv-color-toolbar-button-text-active: #01ba3d;
+  --tv-color-toolbar-button-text-active-hover: #01ba3d;
+  --tv-color-item-active-text: red;
+  --tv-color-toolbar-toggle-button-background-active: #01ba3d;
+  --tv-color-toolbar-toggle-button-background-active-hover: #01ba3d;
+}
+
+.theme-dark:root {
+  --tv-color-platform-background: rgba(0, 0, 0, 0);
+  --tv-color-pane-background: rgba(0, 0, 0, 0);
+  --tv-color-pane-background-secondary: rgba(0, 0, 0, 0);
+  --tv-color-toolbar-button-background-hover: rgba(0, 186, 61, 0.1);
+  --tv-color-toolbar-button-background-secondary-hover: rgba(0, 186, 61, 0.1);
+  --tv-color-toolbar-button-background-expanded: rgba(0, 186, 61, 0.1);
+  --tv-color-toolbar-button-text: #a3a3a3;
+  --tv-color-toolbar-button-text-hover: #a3a3a3;
+  --tv-color-toolbar-button-text-active: #01ba3d;
+  --tv-color-toolbar-button-text-active-hover: #01ba3d;
+  --tv-color-item-active-text: red;
+  --tv-color-toolbar-toggle-button-background-active: #01ba3d;
+  --tv-color-toolbar-toggle-button-background-active-hover: #01ba3d;
+}
+
+.group-3uonVBsm .timeBtn {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+/* #drawing-toolbar,
+#drawing-toolbar .group-2_so5thS, */
+html .chart-page .chart-container-border,
+html .chart-controls-bar {
+  background: transparent !important;
+}
+
+html.theme-dark .group-3uonVBsm .timeBtn {
+  color: #758696;
+}
+
+html.theme-dark .group-3uonVBsm .timeBtn:hover {
+  color: #06ceab;
+}
+
+html.theme-dark .group-3uonVBsm .activeBtn {
+  background-color: rgba(183, 213, 234, 0.1);
+  color: #06ceab;
+}
+
+html .group-3uonVBsm {
+  margin-left: 0;
+}
+
+html.theme-light .group-3uonVBsm .timeBtn {
+  color: #51809f;
+}
+
+html.theme-light .group-3uonVBsm .timeBtn:hover {
+  color: #06ceab;
+}
+
+html.theme-light .group-3uonVBsm .activeBtn {
+  background-color: rgba(183, 213, 234, 0.1);
+  color: #06ceab;
+}
+
+html .button-3RnThD8T {
+  border: none !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+html .buyButton-3RnThD8T {
+  background: #06ceab !important;
+}
+
+html .buyButton-3RnThD8T:hover {
+  background: rgba(6, 206, 171, 0.6) !important;
+}
+
+html .sellButton-3RnThD8T {
+  background: #ff4c23 !important;
+}
+
+html .sellButton-3RnThD8T:hover {
+  background: rgba(255, 76, 35, 0.6) !important;
+}
+
+/* 底部工具栏 */
+/* html.theme-dark .chart-toolbar.chart-controls-bar .apply-common-tooltip {
+  color: #a3a3a3 !important;
+}
+html.theme-dark .chart-toolbar.chart-controls-bar .apply-common-tooltip:hover::before {
+  background-color: rgba(0, 186, 61, 0.1) !important;
+}
+html.theme-light .chart-toolbar.chart-controls-bar .apply-common-tooltip {
+  color: #646464 !important;
+}
+html.theme-light .chart-toolbar.chart-controls-bar .apply-common-tooltip:hover::before {
+  background-color: rgba(0, 186, 61, 0.03) !important;
+} */
+
+/* 左侧工具栏 */
+
+/* 交易终端样式 */
+html .section-1IVPJw8O.buy-1IVPJw8O.active-1IVPJw8O {
+  background: #06ceab !important;
+  color: #fff !important;
+}
+
+html .section-1IVPJw8O.sell-1IVPJw8O.active-1IVPJw8O {
+  background: #ff4c23 !important;
+  color: #fff !important;
+}
+
+html.theme-dark .wait-1IVPJw8O .section-1IVPJw8O.sell-1IVPJw8O {
+  color: #50535e !important;
+  background-color: #2a2e39 !important;
+}
+
+html.theme-dark .wait-1IVPJw8O .section-1IVPJw8O.buy-1IVPJw8O {
+  color: #50535e !important;
+  background-color: #2a2e39 !important;
+}
+
+html .button-aNdypdnc {
+  border: none !important;
+}
+
+html .buy-aNdypdnc:not(.disabled-aNdypdnc) {
+  background: #06ceab !important;
+  color: #fff !important;
+}
+
+html .buy-aNdypdnc:not(.disabled-aNdypdnc):hover {
+  background: rgba(6, 206, 171, 0.6) !important;
+}
+
+html .sell-aNdypdnc:not(.disabled-aNdypdnc) {
+  background: #ff4c23 !important;
+  color: #fff !important;
+}
+
+html .sell-aNdypdnc:not(.disabled-aNdypdnc):hover {
+  background: rgba(255, 76, 35, 0.6) !important;
+}
+
+html .slider-3I2ohC86 {
+  background: #06ceab !important;
+}
+
+html .tab-3I2ohC86.active-3I2ohC86 {
+  color: #06ceab !important;
+}
+
+html .tv-button--success {
+  background: #06ceab !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+html .tv-button--success:hover {
+  background: rgba(6, 206, 171, 0.6) !important;
+}
+
+.text-aNdypdnc {
+  font-size: 16px !important;
+}
+.dateRangeWrapper-2yU8ifXU {
+  display: none !important;
+}
+.titleWrapper-1WIwNaDF,
+.valuesWrapper-1WIwNaDF,
+.buttonsWrapper-1WIwNaDF,
+.buttons-1WIwNaDF,
+.statusesWrapper-1WIwNaDF {
+  background: transparent !important;
+}
