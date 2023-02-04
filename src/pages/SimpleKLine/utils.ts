@@ -8,6 +8,10 @@ export interface ISignPoint {
   value: number;
 }
 
+export interface IKlineDataCache extends KLineData {
+  sign: string;
+}
+
 export const filterCSV2BarList = (content: string): [KLineData[], ISignPoint[]] | undefined => {
   if (!content) return undefined
   const contentList = content.split('\n')
@@ -53,18 +57,21 @@ export const filterCSV2BarList = (content: string): [KLineData[], ISignPoint[]] 
   return [reverseList.reverse(), signList]
 }
 
-export const filterCSV = (content: string) => {
+export const filterCSV = (content: string): IKlineDataCache[] | undefined => {
   if (!content) return undefined;
   const contentList = content.split('\n')
   contentList.shift() // 去除首行的表头数据
   contentList.pop() // 去除尾部空数据
-  return contentList.map((item) => ({
-    timestamp: new Date(item[1]).getTime(),
-    high: Number(item[2]),
-    low: Number(item[3]),
-    open: Number(item[4]),
-    close: Number(item[5]),
-    volume: Number(item[6]),
-    sign: item[9] ? 'duo_open' : (item[10] ? 'duo_close' : ''),
-  }))
+  return contentList.map((item) => {
+    const dataList = item.split(',');
+    return ({
+      timestamp: new Date(dataList[1]).getTime(),
+      high: Number(dataList[2]),
+      low: Number(dataList[3]),
+      open: Number(dataList[4]),
+      close: Number(dataList[5]),
+      volume: Number(dataList[6]),
+      sign: dataList[9] ? 'duo_open' : (dataList[10] ? 'duo_close' : ''),
+    })
+  })
 }
