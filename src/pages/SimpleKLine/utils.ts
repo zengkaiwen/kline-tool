@@ -10,6 +10,7 @@ export interface ISignPoint {
 
 export interface IKlineDataCache extends KLineData {
   sign: string;
+  signPrice: number;
 }
 
 export const filterCSV2BarList = (content: string): [KLineData[], ISignPoint[]] | undefined => {
@@ -72,6 +73,7 @@ export const filterCSV = (content: string): IKlineDataCache[] | undefined => {
       close: Number(dataList[5]),
       volume: Number(dataList[6]),
       sign: dataList[9] ? 'duo_open' : (dataList[10] ? 'duo_close' : ''),
+      signPrice: Number(dataList[14]),
     })
   })
 }

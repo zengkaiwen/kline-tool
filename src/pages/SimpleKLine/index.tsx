@@ -98,7 +98,7 @@ function SimpleKLine() {
         name: 'customSign',
         groupId: sign,
         points: [
-          { timestamp: data.timestamp, value: data.close }
+          { timestamp: data.timestamp, value: data.signPrice }
         ],
         styles: {
           rectText: {
